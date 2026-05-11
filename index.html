@@ -621,10 +621,21 @@
   <p class="section-label">Nutrition</p>
   <h2 class="section-title">Aware, not obsessive.</h2>
   <p class="section-body">
-    A lightweight log to stay aware of whether your eating supports your training goal  -  not a calorie counting app. Log calories, macros, what you ate, and any notes. The app computes an estimated daily target from your profile and shows your average alongside it.
+    A lightweight log to stay aware of whether your eating supports your training goal - not a calorie counting app. Log calories, macros, what you ate, and any notes. The app computes an estimated daily target from your profile and shows your average alongside it.
   </p>
   <div class="screenshot-single">
     <img src="screenshots/nutrition.png" alt="Nutrition log" />
+  </div>
+
+  <div class="screenshot-row" style="margin-top:3rem;">
+    <div class="screenshot-item">
+      <img src="screenshots/nutrition-chat.png" alt="Nutrition chat" />
+      <div class="screenshot-text">
+        <h3>Log by chatting, not filling forms</h3>
+        <p>If you have an AI key configured, describe your meals in plain language and the app estimates calories and macros from what you said. Each reply shows the breakdown for what you just added - item, assumed weight, and its individual contribution - so you can correct it before it compounds. Attach a photo of a meal or a nutrition label and the model uses that too.</p>
+        <p style="margin-top:0.75rem;">It handles imprecise input: specific brands, home-cooked portions, things taken from something larger. If it does not know a brand it falls back to the closest equivalent and flags the assumption.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -640,7 +651,7 @@
       It connects signals: if your calorie intake dropped in the same weeks your session output fell, it says so. It closes with concrete adjustments for the next two weeks.
     </p>
     <p>
-      You supply your own key  -  no subscription, no gatekeeping, no markup. The key is stored locally and only sent when you trigger an evaluation.
+      You supply your own key - no subscription, no gatekeeping, no markup. The same key also powers the nutrition chat. It is stored locally and only sent when you trigger a feature that uses it.
     </p>
   </div>
 </section>
@@ -679,7 +690,10 @@
   <h2 class="section-title">Everything stays on your machine.</h2>
   <div class="privacy-box">
     <strong>No account. No subscription. Fully offline.</strong><br/><br/>
-    Everything is stored locally on your machine. The one exception is the smart progress evaluation: if you enable it, your training data is sent to the AI model provider associated with the API key you configured. The key is stored locally and the app never sends it or your data anywhere else. The evaluation is opt-in and only runs when you explicitly trigger it.
+    Everything is stored locally on your machine. There are two exceptions, both opt-in and both using the same API key you configure in your profile:<br/><br/>
+    <strong>Smart progress evaluation</strong> - your training history, session data, nutrition logs, body measurements, and cycle context are sent to the AI provider when you explicitly trigger an evaluation.<br/><br/>
+    <strong>Nutrition chat</strong> - each message you send, along with the day's conversation history and any photos you attach, is sent to the AI provider to generate a reply and update your calorie and macro estimate.<br/><br/>
+    In both cases the key is stored locally, the app never sends it or your data anywhere else, and neither feature runs without you initiating it.
   </div>
 </section>
 
@@ -693,10 +707,10 @@
     <div class="install-download">
       <div class="install-icon">dmg</div>
       <div class="install-meta">
-        <h3>Train Solo 2.0.0</h3>
+        <h3>Train Solo 2.1.0</h3>
         <p>macOS - Apple Silicon (M1 or later) - Not signed with an Apple Developer certificate</p>
       </div>
-      <a class="btn-primary" href="https://github.com/adamcorina/train-solo-presentation/releases/download/V2.0.0/Train.Solo-2.0.0-arm64.dmg">Download .dmg</a>
+      <a class="btn-primary" href="https://github.com/adamcorina/train-solo-presentation/releases/download/V2.1.0/Train.Solo-2.1.0-arm64.dmg">Download .dmg</a>
     </div>
 
     <div class="install-steps">
